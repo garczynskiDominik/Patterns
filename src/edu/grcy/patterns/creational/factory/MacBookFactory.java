@@ -2,11 +2,11 @@ package edu.grcy.patterns.creational.factory;
 
 public class MacBookFactory {
 
-	public static MacBook getObject(String type, String name, String value1, int value2){
+	public static MacBook getMacBook(String type, String memory,String disk, int screenSize){
 		if("type1".equalsIgnoreCase(type))
-			return new MacBookAir(name, value1, value2);
+			return new MacBookAir(memory, disk, screenSize);
 		else if("type2".equalsIgnoreCase(type))
-			return new MacBookPro(name, value1, value2);
+			return new MacBookPro(memory, disk, screenSize);
 
 		return null;
 	}

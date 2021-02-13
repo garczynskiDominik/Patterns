@@ -16,7 +16,7 @@ public class Logger {
             case DB:
                 System.out.println("Writing" + log + " to database.");
                 break;
-            case FILE: //dołożenie nowej metody logowania w metodzie łamie OCP
+          //  case FILE: //dołożenie nowej metody logowania w metodzie łamie OCP
                 // bo modyfikujemy istniejący kod zamiast dodać nowy
                 //...
             default:

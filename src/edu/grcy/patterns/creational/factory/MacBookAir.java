@@ -6,10 +6,10 @@ public class MacBookAir extends MacBook {
 	private String disk;
 	private int screenSize;
 
-	public MacBookAir(String name, String par1, int par2) {
-		this.memory = name;
-		this.disk = par1;
-		this.screenSize = par2;
+	public MacBookAir(String memory, String disk, int screenSize) {
+		this.memory = memory;
+		this.disk = disk;
+		this.screenSize = screenSize;
 	}
 
 	@Override
