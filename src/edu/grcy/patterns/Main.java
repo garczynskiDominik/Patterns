@@ -19,8 +19,9 @@ import edu.grcy.patterns.behavioral.strategy.CarStrategy;
 import edu.grcy.patterns.behavioral.strategy.Travel;
 import edu.grcy.patterns.behavioral.strategy.WalkStrategy;
 import edu.grcy.patterns.behavioral.visitor.*;
-import edu.grcy.patterns.creational.abstractFactory.Object1Factory;
-import edu.grcy.patterns.creational.abstractFactory.ObjectFactory;
+import edu.grcy.patterns.creational.abstractFactory.Ford;
+import edu.grcy.patterns.creational.abstractFactory.FordFiestFactory;
+import edu.grcy.patterns.creational.abstractFactory.FordOrdersPoint;
 import edu.grcy.patterns.creational.prototype.ShoppingList;
 import edu.grcy.patterns.creational.singleton.EagerSingleton;
 import edu.grcy.patterns.creational.singleton.LazySingleton;
@@ -113,11 +114,11 @@ public class Main {
 
 */
 	private static void testAbstractFactory(){
-		edu.grcy.patterns.creational.abstractFactory.ObjectType
-				object1 =  ObjectFactory.getObject(
-						new Object1Factory("Object1", "Value1", 1)) ;
+		Ford
+				object1 =  FordOrdersPoint.orderNewFord(
+						new FordFiestFactory("Object1", "Value1", "1")) ;
 
-		edu.grcy.patterns.creational.abstractFactory.ObjectType object2 =  ObjectFactory.getObject(new Object1Factory("Object2", "Value2", 2)) ;
+		Ford object2 =  FordOrdersPoint.orderNewFord(new FordFiestFactory("Object2", "Value2", "2")) ;
 
 		System.out.println(object1.toString());
 		System.out.println(object2.toString());
