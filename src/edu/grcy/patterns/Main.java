@@ -22,6 +22,7 @@ import edu.grcy.patterns.behavioral.visitor.*;
 import edu.grcy.patterns.creational.abstractFactory.Ford;
 import edu.grcy.patterns.creational.abstractFactory.FordFiestFactory;
 import edu.grcy.patterns.creational.abstractFactory.FordOrdersPoint;
+import edu.grcy.patterns.creational.builder.House;
 import edu.grcy.patterns.creational.prototype.ShoppingList;
 import edu.grcy.patterns.creational.singleton.EagerSingleton;
 import edu.grcy.patterns.creational.singleton.LazySingleton;
@@ -126,25 +127,25 @@ public class Main {
 
 	private static void testBuilder(){
 
-		edu.grcy.patterns.creational.builder.Object object =
-				new edu.grcy.patterns.creational.builder.Object.ObjectBuilder
-						("Object1", "Value1", 1).setPar3(true).build();
-		System.out.println(object.getName());
+		House house =
+				new House.HouseBuilder
+						("Object1", "Value1","hk").build();
+		System.out.println(house.getBasement());
 	}
 
 	private static void testPrototype() throws CloneNotSupportedException{
 		ShoppingList shoppingList = new ShoppingList();
-		shoppingList.loadData();
+		shoppingList.loadInitialData();
 
 		//Use the clone method to get the Employee object
 		ShoppingList shoppingListNew = (ShoppingList) shoppingList.clone();
 		ShoppingList shoppingListNew1 = (ShoppingList) shoppingList.clone();
-		List<String> list = shoppingListNew.getShoppingList();
+		List<String> list = shoppingListNew.getShoppings();
 		list.add("kiełbasa");
-		List<String> list1 = shoppingListNew1.getShoppingList();
+		List<String> list1 = shoppingListNew1.getShoppings();
 		list1.remove("ser");
 
-		System.out.println("shoppingList List: "+shoppingList.getShoppingList());
+		System.out.println("shoppingList List: "+shoppingList.getShoppings());
 		System.out.println("shoppingList new List: "+list);
 		System.out.println("shoppingList new2 List: "+list1);
 	}
