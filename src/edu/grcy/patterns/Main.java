@@ -26,10 +26,10 @@ import edu.grcy.patterns.creational.builder.House;
 import edu.grcy.patterns.creational.prototype.ShoppingList;
 import edu.grcy.patterns.creational.singleton.EagerSingleton;
 import edu.grcy.patterns.creational.singleton.LazySingleton;
-import edu.grcy.patterns.structural.decorator.BasicItem;
-import edu.grcy.patterns.structural.decorator.Item;
-import edu.grcy.patterns.structural.decorator.SpecialItem1;
-import edu.grcy.patterns.structural.decorator.SpecialItem2;
+import edu.grcy.patterns.structural.decorator.BasicCar;
+import edu.grcy.patterns.structural.decorator.Car;
+import edu.grcy.patterns.structural.decorator.SportPackage;
+import edu.grcy.patterns.structural.decorator.WinterPackage;
 import edu.grcy.patterns.structural.flyweight.FordMustang;
 import edu.grcy.patterns.structural.proxy.CompanyEmployees;
 import edu.grcy.patterns.structural.proxy.CompanyInternetNetwork;
@@ -82,16 +82,16 @@ public class Main {
 
 	//testDecorator();
 	private static void testDecorator() {
-		Item sportsCar = new SpecialItem1(new BasicItem(), false);
+		Car sportsCar = new SportPackage(new BasicCar(), false);
 		sportsCar.assemble();
 		System.out.println("\n*****");
 
-		Item sportsLuxuryCar = new SpecialItem1(new SpecialItem2(new BasicItem()), false);
-		sportsLuxuryCar.assemble();
-		System.out.println("\n*****");
-
-		Item sportsLuxuryCar2 = new SpecialItem1(new SpecialItem2(new BasicItem()), true);
-		sportsLuxuryCar2.assemble();
+//		Car sportsLuxuryCar = new SportPackage(new WinterPackage(new BasicCar()),true, false);
+//		sportsLuxuryCar.assemble();
+//		System.out.println("\n*****");
+//
+//		Car sportsLuxuryCar2 = new SportPackage(new WinterPackage(new BasicCar()),true, true);
+//		sportsLuxuryCar2.assemble();
 	}
 
 	private static void EagerSingletonTest() {

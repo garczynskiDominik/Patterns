@@ -4,12 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Drawing implements Shape{
+private String name;
+
+	public Drawing(String name) {
+		this.name = name;
+	}
 
 	//collection of Shapes
 	private List<Shape> shapes = new ArrayList<Shape>();
 
 	@Override
 	public void draw(String fillColor) {
+		System.out.println("Drawing all subparts of: "+this.name);
 		for(Shape sh : shapes)
 		{
 			sh.draw(fillColor);

@@ -1,6 +1,6 @@
 package edu.grcy.patterns.structural.decorator;
 
-public interface Item {
+public interface Car {
 
 	public void assemble();
 }

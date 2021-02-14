@@ -8,9 +8,9 @@ public class Main {
 		String tableName="Employee";
 
 		//generating MySql HTML report and Oracle PDF report without using Facade
-		Connection conMySQL = MySQLReportGenerator.getMySqlDBConnection();
-		MySQLReportGenerator mySQLReportGenerator = new MySQLReportGenerator();
-		mySQLReportGenerator.generateMySqlHTMLReport(tableName, conMySQL);
+		Connection conMySQL = MySQLReportGenerator.getMySqlDBConnection();//1 - polaczenie z babza
+		MySQLReportGenerator mySQLReportGenerator = new MySQLReportGenerator();// 2- inicjowanie obiektu
+		mySQLReportGenerator.generateMySqlHTMLReport(tableName, conMySQL);//3- wlasciwa metoda do wygenerowania raportu
 
 		Connection conOracle = OracleReportGenerator.getOracleDBConnection();
 		OracleReportGenerator oracleReportGenerator = new OracleReportGenerator();

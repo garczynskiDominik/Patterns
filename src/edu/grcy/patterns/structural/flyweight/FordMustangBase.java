@@ -2,20 +2,20 @@ package edu.grcy.patterns.structural.flyweight;
 
 class FordMustangBase {
     private String color;
-    private String equipment;
+    private String engine;
 
-    public FordMustangBase(String color, String equipment) {
-        System.out.println(this.getClass() + " constructor + " + color + " " + equipment);
+    public FordMustangBase(String color, String engine) {
+        System.out.println(this.getClass() + " constructor + " + color + " " + engine);
         this.color = color;
-        this.equipment = equipment;
+        this.engine = engine;
     }
 
     public String getColor() {
         return color;
     }
 
-    public String getEquipment() {
-        return equipment;
+    public String getEngine() {
+        return engine;
     }
 
 }
