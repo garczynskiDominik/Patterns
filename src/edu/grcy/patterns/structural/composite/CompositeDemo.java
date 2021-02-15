@@ -5,9 +5,9 @@ public class CompositeDemo {
         /**
          * Composite pozwala na traktowanie zarowno duzych skomplikowanych obiektow
          * jak i malych rprostych w ten sam sposob:
-         * rysunek sklada sie z trojkatow, kil i mniejszych rysunkow,
-         * jak wysujemy duzy to z automatu musimy narysowac wszystkie jego skladowe
-         * czyli m niejsze rysunki i ich jeszcze mniejsze kola, trojkaty, rysunki
+         * rysunek sklada sie z trojkatow, kol i mniejszych rysunkow,
+         * jak rysujemy duzy to z automatu musimy narysowac wszystkie jego skladowe
+         * czyli  niejsze rysunki i ich jeszcze mniejsze kola, trojkaty, rysunki
          * jak i kola i trojkaty mieszczace sie bezposrednio na tym duzym
          *
          *
