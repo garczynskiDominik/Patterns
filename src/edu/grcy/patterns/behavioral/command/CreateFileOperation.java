@@ -9,6 +9,7 @@ public class CreateFileOperation implements FileOperation {
 
     @Override
     public String performOperation(String content) {
+        System.out.println(getClass().getSimpleName() + "called for " + myFile.getFileName());
         return myFile.createFile(content);
     }
 }
