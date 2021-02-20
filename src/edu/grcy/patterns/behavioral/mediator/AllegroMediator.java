@@ -7,22 +7,19 @@ import java.util.Comparator;
 public class AllegroMediator implements Mediator {
     private ArrayList<Customer> biddingCustomers;
 
-    public AllegroMediator()
-    {
+    public AllegroMediator() {
         biddingCustomers = new ArrayList<>();
     }
 
     @Override
-    public void addBuyer(Customer customer)
-    {
+    public void addBuyer(Customer customer) {
         biddingCustomers.add(customer);
-        System.out.println(customer.name + " was added to" +
+        System.out.println(customer.name + " was added to " +
                 "the buyers list.");
     }
 
     @Override
-    public void findHighestBidder()
-    {
+    public void findHighestBidder() {
         int maxBid = 0;
         Customer winner = null;
 //        for (Customer customer : biddingCustomers) {
