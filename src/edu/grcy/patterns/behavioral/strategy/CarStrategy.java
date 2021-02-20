@@ -1,6 +1,6 @@
 package edu.grcy.patterns.behavioral.strategy;
 
-public class CarStrategy implements TravelStrategy{
+public class CarStrategy implements TravelStrategy {
     private boolean includePaidMotorways;
     private boolean includeFieldRoads;
 
@@ -10,10 +10,14 @@ public class CarStrategy implements TravelStrategy{
     }
 
     @Override
-    public void setTravelPlan(String from, String to) {
-        StringBuilder result = new StringBuilder("Travel by car ")
-                .append(includePaidMotorways ? "including paid motorways"  : "")
-                .append(includeFieldRoads ? " including field roads" : "");
-        System.out.println(result);
+    public String setTravelPlan(String from, String to) {
+        String result = new StringBuilder("Travel by car ")
+                .append(from)
+                .append(" to ")
+                .append(to)
+                .append(includePaidMotorways ? "\nincluding paid motorways" : "")
+                .append(includeFieldRoads ? " including field roads" : "")
+                .toString();
+        return result;
     }
 }
