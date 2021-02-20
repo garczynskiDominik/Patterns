@@ -15,4 +15,9 @@ public class Flying implements FlightState {
         System.out.println("Flying. Crew is serving meals!");
         flight.setStatus(Landing.getInstance());
     }
+
+    @Override
+    public void preformAction(Flight flight) {
+        System.out.println("No needed to fasten seatbelts");
+    }
 }

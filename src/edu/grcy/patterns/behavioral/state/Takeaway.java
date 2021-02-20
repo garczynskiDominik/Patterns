@@ -16,4 +16,9 @@ public class Takeaway implements FlightState {
         System.out.println("Takeaway. Please remain seated!");
         flight.setStatus(Flying.getInstance());
     }
+
+    @Override
+    public void preformAction(Flight flight) {
+        System.out.println("No action");
+    }
 }

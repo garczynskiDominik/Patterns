@@ -15,4 +15,9 @@ public class Onboarding implements FlightState {
         System.out.println("Onboarding. Preparing to takeaway!");
         flight.setStatus(Takeaway.getInstance());
     }
+
+    @Override
+    public void preformAction(Flight flight) {
+        System.out.println("When onboarding, there's lot of mess" );
+    }
 }

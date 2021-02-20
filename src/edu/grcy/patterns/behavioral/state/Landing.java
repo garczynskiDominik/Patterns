@@ -15,4 +15,9 @@ public class Landing implements FlightState {
         System.out.println("Landing. Please remain seated!");
         flight.setStatus(Landed.getInstance());
     }
+
+    @Override
+    public void preformAction(Flight flight) {
+        System.out.println("So not go to toilets");
+    }
 }
