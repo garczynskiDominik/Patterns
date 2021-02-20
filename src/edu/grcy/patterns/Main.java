@@ -29,7 +29,6 @@ import edu.grcy.patterns.creational.singleton.LazySingleton;
 import edu.grcy.patterns.structural.decorator.BasicCar;
 import edu.grcy.patterns.structural.decorator.Car;
 import edu.grcy.patterns.structural.decorator.SportPackage;
-import edu.grcy.patterns.structural.decorator.WinterPackage;
 import edu.grcy.patterns.structural.flyweight.FordMustang;
 import edu.grcy.patterns.structural.proxy.CompanyEmployees;
 import edu.grcy.patterns.structural.proxy.CompanyInternetNetwork;
@@ -247,10 +246,10 @@ public class Main {
 	}
 
 	private static void testVisitor(){
-		ItemElement[] items = new ItemElement[]{
-				new Item1(20, 5, ""),
-				new Item2(10, 2, "Banana"),
-				new Item2(5, 5, "Apple")};
+		Merchandise[] items = new Merchandise[]{
+				new Fridge(20, 5, ""),
+				new Butter(10, 2, "Banana"),
+				new Butter(5, 5, "Apple")};
 
 		int total = calculatePrice(items);
 		System.out.println("Total Cost = "+total);
@@ -280,10 +279,10 @@ public class Main {
 		travel1.setTravelPlan(new CarStrategy(true, true));
 	}
 
-	private static int calculatePrice(ItemElement[] items) {
-		ItemVisitor visitor = new ItemVisitorImpl();
+	private static int calculatePrice(Merchandise[] items) {
+		Calculator visitor = new PriceCalculator();
 		int sum=0;
-		for(ItemElement item : items){
+		for(Merchandise item : items){
 			sum = sum + item.accept(visitor);
 		}
 		return sum;
