@@ -1,0 +1,13 @@
+struktura
+
+bank, konto, status konta(zadluzone), rodzaj konta(ROR,RO,
+
+zakladamy w banku konto na poczatek zwykle jak wplacimy duzo to zmienia sie
+naliczanie odsetek na "duza kasa"
+
+jak wyplacimy wiecej niz mamy- czyli wejdziemy na debet to wtedy "Zadluzone"
+
+metoda do naliczania odsetek ma uwzgledniac stan konta
+jak zwykle to 1% od salda
+jak duza kasa to 1,5%
+jak zadluzone to -4%

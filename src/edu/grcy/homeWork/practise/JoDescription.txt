@@ -1,0 +1,52 @@
+MUST HAVE
+* JAVA 8 and above (np 11)
+-kolekcje
+-obiekty
+-equals, hashcode
+-toString
+-pliki,
+-watki
+-abstrakcje
+-interfejsy
+-solid
+-niektore wzorce
+* SPRING
+-SpringBoot
+-Spring MVS
+-konfiguracja (anotacjami i XML)
+* Hibernate /JPA
+-laczenie i wspolpraca z bazami danych
+-odczytywanie zapisaywanie obiektow
+-transakcje
+* GIT
+-commitowanie
+-branchowanie
+-laczenie zmian merfe/rebase
+* Baza danycg SQL
+-jakas np. ORACLE/MSSQL/Postgres/MySQL
+* Narzedzia do budowania projektu
+-Maven ew. Gradle
+* HTML,CSS, JS(Angular/React/Vue)
+*Testy JUnit i AsserJ
+
+NICE TO HAVE
+* J.Angielski
+* Java
+-ciekawsze/skomplikowane tematy np. wielowatkowosc,refleksje
+* Spring, Hipernate Adv
+* Bazy danych No-SQL (MongoDB- do ogarniecia!!, Apache Cassandra, ElasticSearch
+* CI/CD (Continous Integration/ Continous Delivery)
+-narzedzia do automatycznego generowania aplikacji
+-narzedzia jak Jenkins, Jira, Confluense
+* Metodyki zarzadzania projektami
+-Scrum/Agile/Kanban/Waterfall
+* Spring
+-Spring Cloud
+-Spring Batch
+-Spring Security
+* Hibernate / JPA Adv
+*Cloud
+-AWS/Google Cloud/
+*Frontend (wyższy poziom JS)+
+*Konteneryzacja
+ -Docker, Kubernetes, ew Docker Swarm -2 dni roboty!!
