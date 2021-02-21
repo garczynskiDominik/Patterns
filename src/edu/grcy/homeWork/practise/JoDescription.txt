@@ -28,6 +28,7 @@ MUST HAVE
 -Maven ew. Gradle
 * HTML,CSS, JS(Angular/React/Vue)
 *Testy JUnit i AsserJ
+*IDE IntelliJ
 
 NICE TO HAVE
 * J.Angielski
